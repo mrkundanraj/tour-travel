@@ -4,96 +4,81 @@
   font-family: sans-serif;
   box-sizing: border-box;
   text-decoration: none;
-
-  
 }
 
-  html{
-    scroll-behavior: smooth;
-  }
+html{
+  scroll-behavior: smooth;
+}
+
 header {
-  
   display: flex;
   background-color: white;
   border-bottom: 1px solid #d8dded;
-  height: 110px;
+  min-height: 110px;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
+
 .Hackathon_Home {
   height: 150px;
 }
+
 .logo_container {
   margin-left: 4%;
 }
+
 .action {
   margin-right: 4%;
 }
+
 .nav {
   display: flex;
   min-width: 500px;
   justify-content: space-evenly;
-}
-.all{
-  transition: 0.5s;
-  
-}
-.all:hover{
-  transform: scale(1.2);
-  z-index: 2;
-}
-.stay{
-  transition: 0.5s;
-}
-.stay:hover{
-  transform: scale(1.2);
-  z-index: 2;
+  flex-wrap: wrap;
 }
 
-.food{
-  transition: 0.5s;
+.all,.stay,.food,.travel{
+  transition:0.5s;
 }
-.food:hover{
-  transform: scale(1.2);
-  z-index: 2;
-}
-.travel{
-  transition: 0.5s;
-}
+
+.all:hover,
+.stay:hover,
+.food:hover,
 .travel:hover{
-  transform: scale(1.2);
-  z-index: 2;
+  transform:scale(1.2);
+  z-index:2;
 }
+
 .nav a {
   font-size: 14px;
   letter-spacing: 0.3px;
   color: #282c3f;
   font-weight: 700;
   text-transform: uppercase;
-  text-decoration: none;
 }
+
 .nav a sup {
   color: red;
   font-size: 10px;
 }
+
 .search_bar {
   height: 40px;
   min-width: 300px;
   display: flex;
   align-items: center;
 }
+
 .search_icon {
-  box-sizing: content-box;
   height: 20px;
   padding: 10px;
-
   background-color: #f5f5f6;
-  color: #282c3f;
-  font-weight: 300;
   border-radius: 20px 0 0 20px;
 }
+
 .search_input {
-  color: #696e79;
   background-color: #f5f5f6;
   flex-grow: 1;
   height: 40px;
@@ -106,6 +91,7 @@ header {
   min-width: 200px;
   justify-content: space-evenly;
 }
+
 .action_container {
   display: flex;
   flex-direction: column;
@@ -113,185 +99,159 @@ header {
 }
 
 main {
-  text-align: center;
-  justify-content: space-evenly;
-  
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
 }
-
 
 .box {
   height: 300px;
   width: 200px;
-  
-  display: inline-block;
   border-radius: 20px;
   margin: 26px;
   text-align: center;
-  text-decoration: none;
   font-family: 'Times New Roman', Times, serif;
-  transition: 0.5s;
-
+  transition:0.5s;
 }
 
 .box:hover{
-  transform: scale(1.1);
-  z-index: 2;
+  transform:scale(1.1);
+  z-index:2;
 }
+
 .innerbox {
   height: 230px;
   width: 200px;
   background-size: cover;
-  font-weight: normal;
   font-size: 18px;
-  text-align: center;
-  text-decoration: none;
 }
+
 h2 {
   color: black;
 }
+
 p{
-  color: rgb(24, 24, 24);
+  text-align:center;
+  font-size:20px;
+  font-weight:700;
+  color:black;
 }
+
 #boundry{
-  text-align: left;
+  text-align:left;
 }
+
 .chatbot{
-    width: 70px; /* Set the width of the chart box */
-    height: 70px; /* Set the height of the chart box */
-    position: fixed; /* Positioning method */
-    bottom: 30px; /* Distance from the top of the container */
-    right: 10px; /* Distance from the left of the container */
-    background-size: contain;
-    transition: 0.5s;
-
+  width:70px;
+  height:70px;
+  position:fixed;
+  bottom:30px;
+  right:10px;
+  background-size:contain;
+  transition:0.5s;
 }
+
 .chatbot:hover{
-  transform: scale(1.1);
-  z-index: 2;
+  transform:scale(1.1);
 }
-
-
 
 .slider {
-  width: 100%;
-  height: 500px; /* adjust the height as needed */
-  position: relative;
-  overflow: hidden;
+  width:100%;
+  height:500px;
+  position:relative;
+  overflow:hidden;
 }
 
 .slide {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 1s ease-in-out;
-  background-size: 100% 100%;
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  transition:all 1s ease-in-out;
+  background-size:100% 100%;
 }
 
-#slide1 {
-  background-color: red;
-}
+#slide1 {background-color:red;}
+#slide2 {background-color:green; left:100%;}
+#slide3 {background-color:blue; left:200%;}
 
-#slide2 {
-  background-color: green;
-  left: 100%;
-}
-
-#slide3 {
-  background-color: blue;
-  left: 200%;
-}
-p{
-  position: relative;
-  right: 580px;
-  height: 30px;
-  font-size: 30px;
-  font-weight: 700;
-  color: black;
-  z-index: 1;
-  overflow: hidden;
-  font-family: monospace;
- 
-}
 .footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  
-  bottom: 0;
-  width: 100%;
-}
-.footer a {
-  text-align: center;
-  color: #5aacd8;
-  text-decoration: none;
-  
-}
-.footer a:hover {
-  text-decoration: underline;
-}
-.footer .social-icons {
-  margin: 10px 0;
-}
-/* Images mobile friendly */
-img {
-  max-width: 100%;
-  height: auto;
+  background-color:#333;
+  color:white;
+  text-align:center;
+  padding:20px 0;
+  width:100%;
 }
 
-@media (max-width:768px){
+.footer a {
+  color:#5aacd8;
+}
+
+.footer .social-icons {
+  margin:10px 0;
+}
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+/* ================= MOBILE FIX ================= */
+
+@media(max-width:768px){
 
 header{
 flex-direction:column;
-height:auto;
-padding:10px;
+align-items:center;
 }
 
 .nav{
 min-width:100%;
-flex-wrap:wrap;
 justify-content:center;
+gap:10px;
 }
 
 .search_bar{
-min-width:100%;
 width:100%;
+min-width:100%;
+margin-top:10px;
 }
 
 .action_bar{
 min-width:100%;
 justify-content:center;
+margin-top:10px;
 }
 
 .slider{
 height:220px;
 }
 
+main{
+flex-direction:column;
+align-items:center;
+}
+
 .box{
 width:90%;
-display:block;
+height:auto;
 margin:15px auto;
 }
 
 .innerbox{
 width:100%;
 height:200px;
-background-size:cover;
 background-position:center;
-}
-
-p{
-position:static;
-right:0;
-text-align:center;
-font-size:22px;
 }
 
 .Hackathon_Home{
 height:80px;
 }
 
+p{
+font-size:22px;
+text-align:center;
 }
 
+}
