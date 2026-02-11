@@ -235,3 +235,30 @@ p{
 .footer .social-icons {
   margin: 10px 0;
 }
+/* Images mobile friendly */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+  }
+
+}
